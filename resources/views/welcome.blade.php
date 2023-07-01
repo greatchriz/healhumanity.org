@@ -566,6 +566,8 @@
       </div>
     </section>
 
+    <x-main.causes.section :causes="$causes" />
+
     <!-- Section: Causes -->
     <section id="causes" class="bg-silver-light">
       <div class="container">
