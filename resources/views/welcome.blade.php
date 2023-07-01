@@ -1,140 +1,1444 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<x-main.layout>
 
-        <title>Laravel</title>
+  <!-- Start main-content -->
+  <div class="main-content">
+    <!-- Section: home -->
+    <section id="home">
+      <div class="container-fluid p-0">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+        <!-- Slider Revolution Start -->
+        <div class="rev_slider_wrapper">
+          <div class="rev_slider rev_slider_default" data-version="5.0">
+            <ul>
 
-        <!-- Styles -->
-        <style>
-            /* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Figtree, sans-serif;font-feature-settings:normal}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.relative{position:relative}.mx-auto{margin-left:auto;margin-right:auto}.mx-6{margin-left:1.5rem;margin-right:1.5rem}.ml-4{margin-left:1rem}.mt-16{margin-top:4rem}.mt-6{margin-top:1.5rem}.mt-4{margin-top:1rem}.-mt-px{margin-top:-1px}.mr-1{margin-right:0.25rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.h-16{height:4rem}.h-7{height:1.75rem}.h-6{height:1.5rem}.h-5{height:1.25rem}.min-h-screen{min-height:100vh}.w-auto{width:auto}.w-16{width:4rem}.w-7{width:1.75rem}.w-6{width:1.5rem}.w-5{width:1.25rem}.max-w-7xl{max-width:80rem}.shrink-0{flex-shrink:0}.scale-100{--tw-scale-x:1;--tw-scale-y:1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.items-center{align-items:center}.justify-center{justify-content:center}.gap-6{gap:1.5rem}.gap-4{gap:1rem}.self-center{align-self:center}.rounded-lg{border-radius:0.5rem}.rounded-full{border-radius:9999px}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity))}.bg-dots-darker{background-image:url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E")}.from-gray-700\/50{--tw-gradient-from:rgb(55 65 81 / 0.5);--tw-gradient-to:rgb(55 65 81 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0);--tw-gradient-stops:var(--tw-gradient-from), transparent, var(--tw-gradient-to)}.bg-center{background-position:center}.stroke-red-500{stroke:#ef4444}.stroke-gray-400{stroke:#9ca3af}.p-6{padding:1.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.text-center{text-align:center}.text-right{text-align:right}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-gray-500\/20{--tw-shadow-color:rgb(107 114 128 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-red-500 *::selection{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.selection\:bg-red-500::selection{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.hover\:text-gray-900:hover{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.hover\:text-gray-700:hover{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity))}.focus\:rounded-sm:focus{border-radius:0.125rem}.focus\:outline:focus{outline-style:solid}.focus\:outline-2:focus{outline-width:2px}.focus\:outline-red-500:focus{outline-color:#ef4444}.group:hover .group-hover\:stroke-gray-600{stroke:#4b5563}.z-10{z-index: 10}@media (prefers-reduced-motion: no-preference){.motion-safe\:hover\:scale-\[1\.01\]:hover{--tw-scale-x:1.01;--tw-scale-y:1.01;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}}@media (prefers-color-scheme: dark){.dark\:bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.dark\:bg-gray-800\/50{background-color:rgb(31 41 55 / 0.5)}.dark\:bg-red-800\/20{background-color:rgb(153 27 27 / 0.2)}.dark\:bg-dots-lighter{background-image:url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(255,255,255,0.07)'/%3E%3C/svg%3E")}.dark\:bg-gradient-to-bl{background-image:linear-gradient(to bottom left, var(--tw-gradient-stops))}.dark\:stroke-gray-600{stroke:#4b5563}.dark\:text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity))}.dark\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:shadow-none{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.dark\:ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.dark\:ring-inset{--tw-ring-inset:inset}.dark\:ring-white\/5{--tw-ring-color:rgb(255 255 255 / 0.05)}.dark\:hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.group:hover .dark\:group-hover\:stroke-gray-400{stroke:#9ca3af}}@media (min-width: 640px){.sm\:fixed{position:fixed}.sm\:top-0{top:0px}.sm\:right-0{right:0px}.sm\:ml-0{margin-left:0px}.sm\:flex{display:flex}.sm\:items-center{align-items:center}.sm\:justify-center{justify-content:center}.sm\:justify-between{justify-content:space-between}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:gap-8{gap:2rem}.lg\:p-8{padding:2rem}}
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-            @if (Route::has('login'))
-                <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
-                    @auth
-                        <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
+              <!-- SLIDE 1 -->
+              <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/bg/bg16.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="images/bg/bg16.jpg"  alt=""  data-bgposition="center 70%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                <!-- LAYERS -->
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
+                  id="rs-1-layer-1"
 
-            <div class="max-w-7xl mx-auto p-6 lg:p-8">
-                <div class="flex justify-center">
-                    <svg viewBox="0 0 62 65" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto bg-gray-100 dark:bg-gray-900">
-                        <path d="M61.8548 14.6253C61.8778 14.7102 61.8895 14.7978 61.8897 14.8858V28.5615C61.8898 28.737 61.8434 28.9095 61.7554 29.0614C61.6675 29.2132 61.5409 29.3392 61.3887 29.4265L49.9104 36.0351V49.1337C49.9104 49.4902 49.7209 49.8192 49.4118 49.9987L25.4519 63.7916C25.3971 63.8227 25.3372 63.8427 25.2774 63.8639C25.255 63.8714 25.2338 63.8851 25.2101 63.8913C25.0426 63.9354 24.8666 63.9354 24.6991 63.8913C24.6716 63.8838 24.6467 63.8689 24.6205 63.8589C24.5657 63.8389 24.5084 63.8215 24.456 63.7916L0.501061 49.9987C0.348882 49.9113 0.222437 49.7853 0.134469 49.6334C0.0465019 49.4816 0.000120578 49.3092 0 49.1337L0 8.10652C0 8.01678 0.0124642 7.92953 0.0348998 7.84477C0.0423783 7.8161 0.0598282 7.78993 0.0697995 7.76126C0.0884958 7.70891 0.105946 7.65531 0.133367 7.6067C0.152063 7.5743 0.179485 7.54812 0.20192 7.51821C0.230588 7.47832 0.256763 7.43719 0.290416 7.40229C0.319084 7.37362 0.356476 7.35243 0.388883 7.32751C0.425029 7.29759 0.457436 7.26518 0.498568 7.2415L12.4779 0.345059C12.6296 0.257786 12.8015 0.211853 12.9765 0.211853C13.1515 0.211853 13.3234 0.257786 13.475 0.345059L25.4531 7.2415H25.4556C25.4955 7.26643 25.5292 7.29759 25.5653 7.32626C25.5977 7.35119 25.6339 7.37362 25.6625 7.40104C25.6974 7.43719 25.7224 7.47832 25.7523 7.51821C25.7735 7.54812 25.8021 7.5743 25.8196 7.6067C25.8483 7.65656 25.8645 7.70891 25.8844 7.76126C25.8944 7.78993 25.9118 7.8161 25.9193 7.84602C25.9423 7.93096 25.954 8.01853 25.9542 8.10652V33.7317L35.9355 27.9844V14.8846C35.9355 14.7973 35.948 14.7088 35.9704 14.6253C35.9792 14.5954 35.9954 14.5692 36.0053 14.5405C36.0253 14.4882 36.0427 14.4346 36.0702 14.386C36.0888 14.3536 36.1163 14.3274 36.1375 14.2975C36.1674 14.2576 36.1923 14.2165 36.2272 14.1816C36.2559 14.1529 36.292 14.1317 36.3244 14.1068C36.3618 14.0769 36.3942 14.0445 36.4341 14.0208L48.4147 7.12434C48.5663 7.03694 48.7383 6.99094 48.9133 6.99094C49.0883 6.99094 49.2602 7.03694 49.4118 7.12434L61.3899 14.0208C61.4323 14.0457 61.4647 14.0769 61.5021 14.1055C61.5333 14.1305 61.5694 14.1529 61.5981 14.1803C61.633 14.2165 61.6579 14.2576 61.6878 14.2975C61.7103 14.3274 61.7377 14.3536 61.7551 14.386C61.7838 14.4346 61.8 14.4882 61.8199 14.5405C61.8312 14.5692 61.8474 14.5954 61.8548 14.6253ZM59.893 27.9844V16.6121L55.7013 19.0252L49.9104 22.3593V33.7317L59.8942 27.9844H59.893ZM47.9149 48.5566V37.1768L42.2187 40.4299L25.953 49.7133V61.2003L47.9149 48.5566ZM1.99677 9.83281V48.5566L23.9562 61.199V49.7145L12.4841 43.2219L12.4804 43.2194L12.4754 43.2169C12.4368 43.1945 12.4044 43.1621 12.3682 43.1347C12.3371 43.1097 12.3009 43.0898 12.2735 43.0624L12.271 43.0586C12.2386 43.0275 12.2162 42.9888 12.1887 42.9539C12.1638 42.9203 12.1339 42.8916 12.114 42.8567L12.1127 42.853C12.0903 42.8156 12.0766 42.7707 12.0604 42.7283C12.0442 42.6909 12.023 42.656 12.013 42.6161C12.0005 42.5688 11.998 42.5177 11.9931 42.4691C11.9881 42.4317 11.9781 42.3943 11.9781 42.3569V15.5801L6.18848 12.2446L1.99677 9.83281ZM12.9777 2.36177L2.99764 8.10652L12.9752 13.8513L22.9541 8.10527L12.9752 2.36177H12.9777ZM18.1678 38.2138L23.9574 34.8809V9.83281L19.7657 12.2459L13.9749 15.5801V40.6281L18.1678 38.2138ZM48.9133 9.14105L38.9344 14.8858L48.9133 20.6305L58.8909 14.8846L48.9133 9.14105ZM47.9149 22.3593L42.124 19.0252L37.9323 16.6121V27.9844L43.7219 31.3174L47.9149 33.7317V22.3593ZM24.9533 47.987L39.59 39.631L46.9065 35.4555L36.9352 29.7145L25.4544 36.3242L14.9907 42.3482L24.9533 47.987Z" fill="#FF2D20"/>
-                    </svg>
-                </div>
-
-                <div class="mt-16">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                        <a href="https://laravel.com/docs" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                            <div>
-                                <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                                    </svg>
-                                </div>
-
-                                <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Documentation</h2>
-
-                                <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                    Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
-                                </p>
-                            </div>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                            </svg>
-                        </a>
-
-                        <a href="https://laracasts.com" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                            <div>
-                                <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                        <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
-                                    </svg>
-                                </div>
-
-                                <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Laracasts</h2>
-
-                                <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </p>
-                            </div>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                            </svg>
-                        </a>
-
-                        <a href="https://laravel-news.com" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                            <div>
-                                <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
-                                    </svg>
-                                </div>
-
-                                <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Laravel News</h2>
-
-                                <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </p>
-                            </div>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                            </svg>
-                        </a>
-
-                        <div class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                            <div>
-                                <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64" />
-                                    </svg>
-                                </div>
-
-                                <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</h2>
-
-                                <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Forge</a>, <a href="https://vapor.laravel.com" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Vapor</a>, <a href="https://nova.laravel.com" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Nova</a>, and <a href="https://envoyer.io" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Telescope</a>, and more.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                  data-x="['left']"
+                  data-hoffset="['30']"
+                  data-y="['middle']"
+                  data-voffset="['-110']"
+                  data-fontsize="['110']"
+                  data-lineheight="['120']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:700;">Donate
                 </div>
 
-                <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-left">
-                        <div class="flex items-center gap-4">
-                            <a href="https://github.com/sponsors/taylorotwell" class="group inline-flex items-center hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="-mt-px mr-1 w-5 h-5 stroke-gray-400 dark:stroke-gray-600 group-hover:stroke-gray-600 dark:group-hover:stroke-gray-400">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                                </svg>
-                                Sponsor
-                            </a>
-                        </div>
-                    </div>
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-theme-colored-transparent pl-20 pr-20"
+                  id="rs-1-layer-2"
 
-                    <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </div>
+                  data-x="['left']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['-25']"
+                  data-fontsize="['35']"
+                  data-lineheight="['54']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:600;">For the poor children
                 </div>
-            </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption tp-resizeme text-white"
+                  id="rs-1-layer-3"
+
+                  data-x="['left']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['35','35','40']"
+                  data-fontsize="['16','18',24']"
+                  data-lineheight="['28']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400;">Every day we bring hope to millions of children in the world's<br>  hardest places as a sign of God's unconditional love.
+                </div>
+
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption tp-resizeme"
+                  id="rs-1-layer-4"
+
+                  data-x="['left']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['95','105','110']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-theme-colored pl-20 pr-20" href="#">Donate Now</a>
+                </div>
+              </li>
+
+              <!-- SLIDE 2 -->
+              <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/bg/bg9.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="images/bg/bg9.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption tp-resizeme text-uppercase  bg-dark-transparent text-white font-raleway pl-30 pr-30"
+                  id="rs-2-layer-1"
+
+                  data-x="['center']"
+                  data-hoffset="['0']"
+                  data-y="['middle']"
+                  data-voffset="['-90']"
+                  data-fontsize="['28']"
+                  data-lineheight="['54']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:400; border-radius: 30px;">For the poor children
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption tp-resizeme text-uppercase bg-theme-colored-transparent text-white font-raleway pl-30 pr-30"
+                  id="rs-2-layer-2"
+
+                  data-x="['center']"
+                  data-hoffset="['0']"
+                  data-y="['middle']"
+                  data-voffset="['-20']"
+                  data-fontsize="['48']"
+                  data-lineheight="['70']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:700; border-radius: 30px;">raise your helping hand
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption tp-resizeme text-white text-center"
+                  id="rs-2-layer-3"
+
+                  data-x="['center']"
+                  data-hoffset="['0']"
+                  data-y="['middle']"
+                  data-voffset="['50']"
+                  data-fontsize="['16','18',24']"
+                  data-lineheight="['28']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400;">Every day we bring hope to millions of children in the world's<br>  hardest places as a sign of God's unconditional love.
+                </div>
+
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption tp-resizeme"
+                  id="rs-2-layer-4"
+
+                  data-x="['center']"
+                  data-hoffset="['0']"
+                  data-y="['middle']"
+                  data-voffset="['115']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-default btn-circled btn-theme-colored pl-20 pr-20" href="#">Donate Now</a>
+                </div>
+              </li>
+
+              <!-- SLIDE 3 -->
+              <li data-index="rs-3" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/bg/bg17.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide 3" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="images/bg/bg17.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-theme-colored-transparent pr-20 pl-20"
+                  id="rs-3-layer-1"
+
+                  data-x="['right']"
+                  data-hoffset="['30']"
+                  data-y="['middle']"
+                  data-voffset="['-90']"
+                  data-fontsize="['64']"
+                  data-lineheight="['72']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:600;"><span class="">Help</span> The Poor
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
+                  id="rs-3-layer-2"
+
+                  data-x="['right']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['-25']"
+                  data-fontsize="['32']"
+                  data-lineheight="['54']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:600;">For Their Better Future
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption tp-resizeme text-white text-right"
+                  id="rs-3-layer-3"
+
+                  data-x="['right']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['30']"
+                  data-fontsize="['16','18',24']"
+                  data-lineheight="['28']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400;">Every day we bring hope to millions of children in the world's<br>  hardest places as a sign of God's unconditional love.
+                </div>
+
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption tp-resizeme"
+                  id="rs-3-layer-4"
+
+                  data-x="['right']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['95']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored pl-20 pr-20" href="#">Donate Now</a>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+          <!-- end .rev_slider -->
         </div>
-    </body>
-</html>
+        <!--  Revolution slider scriopt -->
+        <script>
+          $(document).ready(function(e) {
+            $(".rev_slider_default").revolution({
+              sliderType:"standard",
+              sliderLayout: "auto",
+              dottedOverlay: "none",
+              delay: 5000,
+              navigation: {
+                keyboardNavigation: "off",
+                keyboard_direction: "horizontal",
+                mouseScrollNavigation: "off",
+                onHoverStop: "off",
+                touch: {
+                  touchenabled: "on",
+                  swipe_threshold: 75,
+                  swipe_min_touches: 1,
+                  swipe_direction: "horizontal",
+                  drag_block_vertical: false
+                },
+                arrows: {
+                  style:"zeus",
+                  enable:true,
+                  hide_onmobile:true,
+                  hide_under:600,
+                  hide_onleave:true,
+                  hide_delay:200,
+                  hide_delay_mobile:1200,
+                  tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
+                  left: {
+                    h_align:"left",
+                    v_align:"center",
+                    h_offset:30,
+                    v_offset:0
+                  },
+                  right: {
+                    h_align:"right",
+                    v_align:"center",
+                    h_offset:30,
+                    v_offset:0
+                  }
+                },
+                bullets: {
+                  enable:true,
+                  hide_onmobile:true,
+                  hide_under:600,
+                  style:"metis",
+                  hide_onleave:true,
+                  hide_delay:200,
+                  hide_delay_mobile:1200,
+                  direction:"horizontal",
+                  h_align:"center",
+                  v_align:"bottom",
+                  h_offset:0,
+                  v_offset:30,
+                  space:5,
+                  tmp:'<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span><span class="tp-bullet-title">title</span>'
+                }
+              },
+              responsiveLevels: [1240, 1024, 778],
+              visibilityLevels: [1240, 1024, 778],
+              gridwidth: [1170, 1024, 778, 480],
+              gridheight: [700, 768, 960, 720],
+              lazyType: "none",
+              parallax: {
+                origo: "slidercenter",
+                speed: 1000,
+                levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 100, 55],
+                type: "scroll"
+              },
+              shadow: 0,
+              spinner: "off",
+              stopLoop: "on",
+              stopAfterLoops: 0,
+              stopAtSlide: -1,
+              shuffle: "off",
+              autoHeight: "off",
+              fullScreenAutoWidth: "off",
+              fullScreenAlignForce: "off",
+              fullScreenOffsetContainer: "",
+              fullScreenOffset: "0",
+              hideThumbsOnMobile: "off",
+              hideSliderAtLimit: 0,
+              hideCaptionAtLimit: 0,
+              hideAllCaptionAtLilmit: 0,
+              debugMode: false,
+              fallbacks: {
+                simplifyAll: "off",
+                nextSlideOnWindowFocus: "off",
+                disableFocusListener: false,
+              }
+            });
+          });
+        </script>
+        <!-- Slider Revolution Ends -->
+      </div>
+    </section>
+
+    <!-- Section: home-boxes -->
+    <section>
+      <div class="container pt-0 pb-0">
+        <div class="section-content">
+          <div class="row equal-height-inner home-boxes" data-margin-top="-100px">
+            <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay1">
+              <div class="sm-height-auto bg-theme-colored">
+                <div class="text-center pt-10 pb-30">
+                  <i class="flaticon-charity-shaking-hands-inside-a-heart text-white font-64"></i>
+                  <h4 class="text-uppercase mt-0"><a href="#" class="text-white">Help The Children for education</a></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay2">
+              <div class="sm-height-auto bg-theme-colored-darker2">
+                <div class="text-center pt-10 pb-30">
+                  <i class="flaticon-charity-make-a-donation text-white font-64"></i>
+                  <h4 class="text-uppercase mt-0"><a href="#" class="text-white">Please Donate Us for BetterLife</a></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay3">
+              <div class="sm-height-auto bg-theme-colored-darker3">
+                <div class="text-center pt-10 pb-30">
+                  <i class="flaticon-charity-hands-with-hearts text-white font-64"></i>
+                  <h4 class="text-uppercase mt-0"><a href="#" class="text-white">Become a Volunteer Earthquake Zone</a></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay4">
+              <div class="sm-height-auto bg-theme-colored-darker4">
+                <div class="text-center pt-10 pb-30">
+                  <i class="flaticon-charity-world-in-your-hands text-white font-64"></i>
+                  <h4 class="text-uppercase mt-0"><a href="#" class="text-white">Reduce World Poverty Affected Zone</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: About  -->
+    <section>
+      <div class="container">
+        <div class="section-content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <h2 class="line-bottom border-bottom mt-0">Upcoming Events</h2>
+              <div class="event media sm-maxwidth400 border-bottom mt-5 mb-0 pt-10 pb-15">
+                <div class="row">
+                  <div class="col-xs-2 col-md-3 pr-0">
+                    <div class="event-date text-center bg-theme-colored border-1px p-0 pt-10 pb-10 sm-custom-style">
+                      <ul>
+                        <li class="font-28 text-white font-weight-700">28</li>
+                        <li class="font-18 text-white text-center text-uppercase">Feb</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-xs-9 pr-10 pl-10">
+                    <div class="event-content mt-10 p-5 pb-0 pt-0">
+                      <h5 class="media-heading font-16 font-weight-600"><a href="#">Event: Help The Children</a></h5>
+                      <ul class="list-inline font-weight-600 text-gray-dimgray">
+                        <li><i class="fa fa-clock-o text-theme-colored"></i> 5.00 pm - 7.30 pm</li>
+                        <li> <i class="fa fa-map-marker text-theme-colored"></i> 25 Newyork City.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="event media sm-maxwidth400 border-bottom mt-5 mb-0 pt-10 pb-15">
+                <div class="row">
+                  <div class="col-xs-2 col-md-3 pr-0">
+                    <div class="event-date text-center bg-theme-colored border-1px p-0 pt-10 pb-10 sm-custom-style">
+                      <ul>
+                        <li class="font-28 text-white font-weight-700">26</li>
+                        <li class="font-18 text-white text-center text-uppercase">OCT</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-xs-9 pr-10 pl-10">
+                    <div class="event-content mt-10 p-5 pb-0 pt-0">
+                      <h5 class="media-heading font-16 font-weight-600"><a href="#">Event: Foods For Poor</a></h5>
+                      <ul class="list-inline font-weight-600 text-gray-dimgray">
+                        <li><i class="fa fa-clock-o text-theme-colored"></i> 6.00 pm - 8.30 pm</li>
+                        <li> <i class="fa fa-map-marker text-theme-colored"></i> 25 Newyork City.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="event media sm-maxwidth400 mt-5 mb-0 pt-10 pb-15">
+                <div class="row">
+                  <div class="col-xs-2 col-md-3 pr-0">
+                    <div class="event-date text-center bg-theme-colored border-1px p-0 pt-10 pb-10 sm-custom-style">
+                      <ul>
+                        <li class="font-28 text-white font-weight-700">12</li>
+                        <li class="font-18 text-white text-center text-uppercase">DEC</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-xs-9 pr-10 pl-10">
+                    <div class="event-content mt-10 p-5 pb-0 pt-0">
+                      <h5 class="media-heading font-16 font-weight-600"><a href="#">Event: Save The Water</a></h5>
+                      <ul class="list-inline font-weight-600 text-gray-dimgray">
+                        <li><i class="fa fa-clock-o text-theme-colored"></i> 4.00 pm - 6.00 pm</li>
+                        <li> <i class="fa fa-map-marker text-theme-colored"></i> 25 Newyork City.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 pb-sm-20">
+              <div class="image-box-thum">
+                <img class="img-fullwidth" alt="" src="images/photos/1.jpg">
+              </div>
+              <div class="image-box-details pt-20 pb-sm-20">
+                <h3 class="title mt-0 line-bottom">In the Spotlight</h3>
+                <p class="desc mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsa ullam dicta suscipit ipsum</p>
+                <a href="#" class="btn btn-default btn-sm btn-theme-colored">Read more</a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 pb-sm-20">
+              <div class="image-box-thum">
+                <img class="img-fullwidth" alt="" src="images/photos/3.jpg">
+              </div>
+              <div class="image-box-details pt-20 pb-sm-20">
+                <h3 class="title mt-0 line-bottom">We The Volunteers</h3>
+                <p class="desc mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsa ullam dicta suscipit ipsum</p>
+                <a href="#" class="btn btn-default btn-sm btn-theme-colored">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Causes -->
+    <section id="causes" class="bg-silver-light">
+      <div class="container">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <h2 class="text-uppercase line-bottom-center mt-0">Our <span class="text-theme-colored font-weight-600">Causes</span></h2>
+              <div class="title-icon">
+                <i class="flaticon-charity-hand-holding-a-heart"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati! <br>ipsum dolor sit Rem autem voluptatem obcaecati</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <div class="causes bg-white border-1px border-bottom-theme-color-1px clearfix mb-30">
+                <div class="col-md-5 col-lg-5 p-0">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="" src="images/course/1.jpg">
+                    <div class="overlay-donate-now">
+                      <a href="page-donate.html" class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10">Donate <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7 col-lg-7 p-0">
+                  <div class="causes clearfix p-20 pt-15">
+                    <h3 class="mt-0"><a class="text-theme-colored" href="#">Education for Childreen</a></h3>
+                    <p class="pt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque iste alias!</p>
+                    <div class="progress-item mt-0">
+                      <div class="progress mb-0">
+                        <div data-percent="84" class="progress-bar"><span class="percent">0</span></div>
+                      </div>
+                    </div>
+                    <div class="course-details-bottom mt-15">
+                      <ul class="list-inline project-conditions mt-30 text-center m-0 p-10">
+                        <li class="target-fund text-theme-colored"><strong>$120,000</strong>Target</li>
+                        <li class="day text-theme-colored"><i class="flaticon-charity-hand-holding-a-heart font-30"></i></li>
+                        <li class="raised text-theme-colored"><strong>$65,000</strong>Raised</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <div class="causes bg-white border-1px border-bottom-theme-color-1px clearfix mb-30">
+                <div class="col-md-5 col-lg-5 p-0">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="" src="images/course/2.jpg">
+                    <div class="overlay-donate-now">
+                      <a href="page-donate.html" class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10">Donate <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7 col-lg-7 p-0">
+                  <div class="causes clearfix p-20 pt-15">
+                    <h3 class="mt-0"><a class="text-theme-colored" href="#">Sponsor a child today</a></h3>
+                    <p class="pt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque iste alias!</p>
+                    <div class="progress-item mt-0">
+                      <div class="progress mb-0">
+                        <div data-percent="84" class="progress-bar"><span class="percent">0</span></div>
+                      </div>
+                    </div>
+                    <div class="course-details-bottom mt-15">
+                      <ul class="list-inline project-conditions mt-30 text-center m-0 p-10">
+                        <li class="target-fund text-theme-colored"><strong>$120,000</strong>Target</li>
+                        <li class="day text-theme-colored"><i class="flaticon-charity-hand-holding-a-heart font-30"></i></li>
+                        <li class="raised text-theme-colored"><strong>$65,000</strong>Raised</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <div class="causes bg-white border-1px border-bottom-theme-color-1px clearfix mb-30">
+                <div class="col-md-5 col-lg-5 p-0">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="" src="images/course/3.jpg">
+                    <div class="overlay-donate-now">
+                      <a href="page-donate.html" class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10">Donate <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7 col-lg-7 p-0">
+                  <div class="causes clearfix p-20 pt-15">
+                    <h3 class="mt-0"><a class="text-theme-colored" href="#">Happiness for child</a></h3>
+                    <p class="pt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque iste alias!</p>
+                    <div class="progress-item mt-0">
+                      <div class="progress mb-0">
+                        <div data-percent="84" class="progress-bar"><span class="percent">0</span></div>
+                      </div>
+                    </div>
+                    <div class="course-details-bottom mt-15">
+                      <ul class="list-inline project-conditions mt-30 text-center m-0 p-10">
+                        <li class="target-fund text-theme-colored"><strong>$120,000</strong>Target</li>
+                        <li class="day text-theme-colored"><i class="flaticon-charity-hand-holding-a-heart font-30"></i></li>
+                        <li class="raised text-theme-colored"><strong>$65,000</strong>Raised</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <div class="causes bg-white border-1px border-bottom-theme-color-1px clearfix mb-30">
+                <div class="col-md-5 col-lg-5 p-0">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="" src="images/course/4.jpg">
+                    <div class="overlay-donate-now">
+                      <a href="page-donate.html" class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10">Donate <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7 col-lg-7 p-0">
+                  <div class="causes clearfix p-20 pt-15">
+                    <h3 class="mt-0"><a class="text-theme-colored" href="#">Donation for helpless</a></h3>
+                    <p class="pt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque iste alias!</p>
+                    <div class="progress-item mt-0">
+                      <div class="progress mb-0">
+                        <div data-percent="84" class="progress-bar"><span class="percent">0</span></div>
+                      </div>
+                    </div>
+                    <div class="course-details-bottom mt-15">
+                      <ul class="list-inline project-conditions mt-30 text-center m-0 p-10">
+                        <li class="target-fund text-theme-colored"><strong>$120,000</strong>Target</li>
+                        <li class="day text-theme-colored"><i class="flaticon-charity-hand-holding-a-heart font-30"></i></li>
+                        <li class="raised text-theme-colored"><strong>$65,000</strong>Raised</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider: Funfact -->
+    <section class="divider parallax layer-overlay overlay-dark-9" data-bg-img="images/bg/bg4.jpg" data-parallax-ratio="0.7">
+      <div class="container pt-80 pb-80">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="pe-7s-smile mt-5 text-white"></i>
+              <h2 data-animation-duration="2000" data-value="754" class="animate-number text-white font-42 font-weight-500 mt-0 mb-0">0</h2>
+              <h5 class="text-white text-uppercase font-weight-600">Happy Donators</h5>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="pe-7s-rocket mt-5 text-white"></i>
+              <h2 data-animation-duration="2000" data-value="675" class="animate-number text-white font-42 font-weight-500 mt-0 mb-0">0</h2>
+              <h5 class="text-white text-uppercase font-weight-600">Success Mission</h5>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="pe-7s-add-user mt-5 text-white"></i>
+              <h2 data-animation-duration="2000" data-value="1248" class="animate-number text-white font-42 font-weight-500 mt-0 mb-0">0</h2>
+              <h5 class="text-white text-uppercase font-weight-600">Volunteer Reached</h5>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="pe-7s-global mt-5 text-white"></i>
+              <h2 data-animation-duration="2000" data-value="24" class="animate-number text-white font-42 font-weight-500 mt-0 mb-0">0</h2>
+              <h5 class="text-white text-uppercase font-weight-600">Globalization Work</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: volunteers -->
+    <section id="team">
+      <div class="container">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <h2 class="text-uppercase line-bottom-center mt-0">Our <span class="text-theme-colored font-weight-600">volunteers</span></h2>
+              <div class="title-icon">
+                <i class="flaticon-charity-hand-holding-a-heart"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati! <br>ipsum dolor sit Rem autem voluptatem obcaecati</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 col-lg-3 pb-sm-30">
+              <div class="volunteer">
+                <img class="img-fullwidth img-responsive" src="images/team/5.jpg" alt="">
+                <div class="volunteer-info bg-theme-colored">
+                  <h3 class="mb-0 mt-0"><a class="text-white" href="#">Sakib John</a></h3>
+                  <p class="text-white">Student / Joined May'16</p>
+                   <div class="volunteer-more text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati! <br>ipsum dolorsit obcaecati.</p>
+                    <div class="social-media">
+                      <ul class="styled-icons icon-circled pt-5">
+                        <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble text-white"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 pb-sm-30">
+              <div class="volunteer">
+                <img class="img-fullwidth img-responsive" src="images/team/6.jpg" alt="">
+                <div class="volunteer-info bg-theme-colored">
+                  <h3 class="mb-0 mt-0"><a class="text-white" href="#">Fiona John</a></h3>
+                  <p class="text-white">Student / Joined May'16</p>
+                   <div class="volunteer-more text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati! <br>ipsum dolorsit obcaecati.</p>
+                    <div class="social-media">
+                      <ul class="styled-icons icon-circled pt-5">
+                        <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble text-white"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 pb-sm-30">
+              <div class="volunteer">
+                <img class="img-fullwidth img-responsive" src="images/team/7.jpg" alt="">
+                <div class="volunteer-info bg-theme-colored">
+                  <h3 class="mb-0 mt-0"><a class="text-white" href="#">Ismail Smith</a></h3>
+                  <p class="text-white">Student / Joined May'16</p>
+                   <div class="volunteer-more text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati! <br>ipsum dolorsit obcaecati.</p>
+                    <div class="social-media">
+                      <ul class="styled-icons icon-circled pt-5">
+                        <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble text-white"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 pb-sm-30">
+              <div class="volunteer">
+                <img class="img-fullwidth img-responsive" src="images/team/8.jpg" alt="">
+                <div class="volunteer-info bg-theme-colored">
+                  <h3 class="mb-0 mt-0"><a class="text-white" href="#">Jerin Smith</a></h3>
+                  <p class="text-white">Student / Joined May'16</p>
+                   <div class="volunteer-more text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati! <br>ipsum dolorsit obcaecati.</p>
+                    <div class="social-media">
+                      <ul class="styled-icons icon-circled pt-5">
+                        <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble text-white"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: DonetForm & Testimonials -->
+    <section class="layer-overlay overlay-white-9" data-bg-img="images/bg/bg4.jpg">
+      <div class="container pb-40">
+        <div class="section-content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <h3 class="text-uppercase title line-bottom mt-0 mb-30"><i class="fa fa-cc-mastercard text-theme-colored mr-10"></i>Make a Donation <span class="text-theme-colored">Now!</span></h3>
+
+              <!-- ===== START: Paypal Both Onetime/Recurring Form ===== -->
+              <form id="paypal_donate_form_onetime_recurring">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group mb-20">
+                      <label><strong>Payment Type</strong></label> <br>
+                      <label class="radio-inline">
+                        <input type="radio" checked="" value="one_time" name="payment_type">
+                        One Time
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" value="recurring" name="payment_type">
+                        Recurring
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12" id="donation_type_choice">
+                    <div class="form-group mb-20">
+                      <label><strong>Donation Type</strong></label>
+                      <div class="radio mt-5">
+                        <label class="radio-inline">
+                          <input type="radio" value="D" name="t3" checked="">
+                          Daily</label>
+                        <label class="radio-inline">
+                          <input type="radio" value="W" name="t3">
+                          Weekly</label>
+                        <label class="radio-inline">
+                          <input type="radio" value="M" name="t3">
+                          Monthly</label>
+                        <label class="radio-inline">
+                          <input type="radio" value="Y" name="t3">
+                          Yearly</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div class="form-group mb-20">
+                      <label><strong>I Want to Donate for</strong></label>
+                      <select name="item_name" class="form-control">
+                        <option value="Educate Children">Educate Children</option>
+                        <option value="Child Camps">Child Camps</option>
+                        <option value="Clean Water for Life">Clean Water for Life</option>
+                        <option value="Campaign for Child Poverty">Campaign for Child Poverty</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div class="form-group mb-20">
+                      <label><strong>Currency</strong></label>
+                      <select name="currency_code" class="form-control">
+                        <option value="">Select Currency</option>
+                        <option value="USD" selected="selected">USD - U.S. Dollars</option>
+                        <option value="AUD">AUD - Australian Dollars</option>
+                        <option value="BRL">BRL - Brazilian Reais</option>
+                        <option value="GBP">GBP - British Pounds</option>
+                        <option value="HKD">HKD - Hong Kong Dollars</option>
+                        <option value="HUF">HUF - Hungarian Forints</option>
+                        <option value="INR">INR - Indian Rupee</option>
+                        <option value="ILS">ILS - Israeli New Shekels</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                        <option value="MYR">MYR - Malaysian Ringgit</option>
+                        <option value="MXN">MXN - Mexican Pesos</option>
+                        <option value="TWD">TWD - New Taiwan Dollars</option>
+                        <option value="NZD">NZD - New Zealand Dollars</option>
+                        <option value="NOK">NOK - Norwegian Kroner</option>
+                        <option value="PHP">PHP - Philippine Pesos</option>
+                        <option value="PLN">PLN - Polish Zlotys</option>
+                        <option value="RUB">RUB - Russian Rubles</option>
+                        <option value="SGD">SGD - Singapore Dollars</option>
+                        <option value="SEK">SEK - Swedish Kronor</option>
+                        <option value="CHF">CHF - Swiss Francs</option>
+                        <option value="THB">THB - Thai Baht</option>
+                        <option value="TRY">TRY - Turkish Liras</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12">
+                    <div class="form-group mb-20">
+                      <label><strong>How much do you want to donate?</strong></label>
+                      <select name="amount" class="form-control">
+                          <option value="20">20</option>
+                          <option value="50">50</option>
+                          <option value="100">100</option>
+                          <option value="200">200</option>
+                          <option value="500">500</option>
+                          <option value="other">Other Amount</option>
+                      </select>
+                      <div id="custom_other_amount">
+                        <label><strong>Custom Amount:</strong></label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-flat btn-dark btn-theme-colored mt-10 pl-30 pr-30" data-loading-text="Please wait...">Donate Now</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <!-- Script for Donation Form Custom Amount -->
+              <script type="text/javascript">
+                $(document).ready(function(e) {
+                  var $donation_form = $("#paypal_donate_form_onetime_recurring");
+                  //toggle custom amount
+                  var $custom_other_amount = $donation_form.find("#custom_other_amount");
+                  $custom_other_amount.hide();
+                  $donation_form.find("select[name='amount']").change(function() {
+                      var $this = $(this);
+                      if ($this.val() == 'other') {
+                        $custom_other_amount.show().append('<div class="input-group"><span class="input-group-addon">$</span> <input id="input_other_amount" type="text" name="amount" class="form-control" value="100"/></div>');
+                      }
+                      else{
+                        $custom_other_amount.children( ".input-group" ).remove();
+                        $custom_other_amount.hide();
+                      }
+                  });
+
+                  //toggle donation_type_choice
+                  var $donation_type_choice = $donation_form.find("#donation_type_choice");
+                  $donation_type_choice.hide();
+                  $("input[name='payment_type']").change(function() {
+                      if (this.value == 'recurring') {
+                          $donation_type_choice.show();
+                      }
+                      else {
+                          $donation_type_choice.hide();
+                      }
+                  });
+
+
+                  // submit form on click
+                  $donation_form.on('submit', function(e){
+                          $( "#paypal_donate_form-onetime" ).submit();
+                      var item_name = $donation_form.find("select[name='item_name'] option:selected").val();
+                      var currency_code = $donation_form.find("select[name='currency_code'] option:selected").val();
+                      var amount = $donation_form.find("select[name='amount'] option:selected").val();
+                      var t3 = $donation_form.find("input[name='t3']:checked").val();
+
+                      if ( amount == 'other') {
+                        amount = $donation_form.find("#input_other_amount").val();
+                      }
+
+                      // submit proper form now
+                      if ( $("input[name='payment_type']:checked", $donation_form).val() == 'recurring' ) {
+                          var recurring_form = $('#paypal_donate_form-recurring');
+
+                          recurring_form.find("input[name='item_name']").val(item_name);
+                          recurring_form.find("input[name='currency_code']").val(currency_code);
+                          recurring_form.find("input[name='a3']").val(amount);
+                          recurring_form.find("input[name='t3']").val(t3);
+
+                          recurring_form.find("input[type='submit']").trigger('click');
+
+                      } else if ( $("input[name='payment_type']:checked", $donation_form).val() == 'one_time' ) {
+                          var onetime_form = $('#paypal_donate_form-onetime');
+
+                          onetime_form.find("input[name='item_name']").val(item_name);
+                          onetime_form.find("input[name='currency_code']").val(currency_code);
+                          onetime_form.find("input[name='amount']").val(amount);
+
+                          onetime_form.find("input[type='submit']").trigger('click');
+                      }
+                      return false;
+                  });
+
+                });
+              </script>
+
+              <!-- Paypal Onetime Form -->
+              <form id="paypal_donate_form-onetime" class="hidden" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_donations">
+                <input type="hidden" name="business" value="accounts@thememascot.com">
+
+                <input type="hidden" name="item_name" value="Educate Children"> <!-- updated dynamically -->
+                <input type="hidden" name="currency_code" value="USD"> <!-- updated dynamically -->
+                <input type="hidden" name="amount" value="20"> <!-- updated dynamically -->
+
+                <input type="hidden" name="no_shipping" value="1">
+                <input type="hidden" name="cn" value="Comments...">
+                <input type="hidden" name="tax" value="0">
+                <input type="hidden" name="lc" value="US">
+                <input type="hidden" name="bn" value="PP-DonationsBF">
+                <input type="hidden" name="return" value="http://www.yoursite.com/thankyou.html">
+                <input type="hidden" name="cancel_return" value="http://www.yoursite.com/paymentcancel.html">
+                <input type="hidden" name="notify_url" value="http://www.yoursite.com/notifypayment.php">
+                <input type="submit" name="submit">
+              </form>
+
+              <!-- Paypal Recurring Form -->
+              <form id="paypal_donate_form-recurring" class="hidden" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                <input type="hidden" name="business" value="accounts@thememascot.com">
+
+                <input type="hidden" name="item_name" value="Educate Children"> <!-- updated dynamically -->
+                <input type="hidden" name="currency_code" value="USD"> <!-- updated dynamically -->
+                <input type="hidden" name="a3" value="20"> <!-- updated dynamically -->
+                <input type="hidden" name="t3" value="D"> <!-- updated dynamically -->
+
+
+                <input type="hidden" name="p3" value="1">
+                <input type="hidden" name="rm" value="2">
+                <input type="hidden" name="src" value="1">
+                <input type="hidden" name="sra" value="1">
+                <input type="hidden" name="no_shipping" value="0">
+                <input type="hidden" name="no_note" value="1">
+                <input type="hidden" name="lc" value="US">
+                <input type="hidden" name="bn" value="PP-DonationsBF">
+                <input type="hidden" name="return" value="http://www.yoursite.com/thankyou.html">
+                <input type="hidden" name="cancel_return" value="http://www.yoursite.com/paymentcancel.html">
+                <input type="hidden" name="notify_url" value="http://www.yoursite.com/notifypayment.php">
+                <input type="submit" name="submit">
+              </form>
+              <!-- ===== END: Paypal Both Onetime/Recurring Form ===== -->
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <h3 class="text-uppercase title line-bottom mt-0 mb-30"><i class="fa fa-comments-o text-theme-colored mr-10"></i>Client <span class="text-theme-colored">Testimonials</span></h3>
+              <div class="testimonial style1 owl-carousel-1col owl-nav-top">
+                <div class="item">
+                  <div class="comment bg-theme-colored">
+                    <p>Lorem ipsum dolor sit ametconse ctetur adipisicing elitvolup tatem error sit qui dolorem facilis.</p>
+                  </div>
+                  <div class="content mt-20">
+                    <div class="thumb pull-right">
+                      <img class="img-circle" alt="" src="images/testimonials/s1.jpg">
+                    </div>
+                    <div class="patient-details text-right pull-right mr-20 mt-10">
+                      <h5 class="author text-theme-colored">Jonathan Smith</h5>
+                      <h6 class="title">cici inc.</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="comment bg-theme-colored">
+                    <p>Lorem ipsum dolor sit ametconse ctetur adipisicing elitvolup tatem error sit qui dolorem facilis.</p>
+                  </div>
+                  <div class="content mt-20">
+                    <div class="thumb pull-right">
+                      <img class="img-circle" alt="" src="images/testimonials/s1.jpg">
+                    </div>
+                    <div class="patient-details text-right pull-right mr-20 mt-10">
+                      <h5 class="author text-theme-colored">Jonathan Smith</h5>
+                      <h6 class="title">cici inc.</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="comment bg-theme-colored">
+                    <p>Lorem ipsum dolor sit ametconse ctetur adipisicing elitvolup tatem error sit qui dolorem facilis.</p>
+                  </div>
+                  <div class="content mt-20">
+                    <div class="thumb pull-right">
+                      <img class="img-circle" alt="" src="images/testimonials/s1.jpg">
+                    </div>
+                    <div class="patient-details text-right pull-right mr-20 mt-10">
+                      <h5 class="author text-theme-colored">Jonathan Smith</h5>
+                      <h6 class="title">cici inc.</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Our Portfolio -->
+    <section>
+      <div class="container">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <h2 class="text-uppercase line-bottom-center mt-0">Photo <span class="text-theme-colored font-weight-600">Gallery</span></h2>
+              <div class="title-icon">
+                <i class="flaticon-charity-hand-holding-a-heart"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati! <br>ipsum dolor sit Rem autem voluptatem obcaecati</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+
+            <!-- Portfolio Gallery Grid -->
+            <div id="grid" class="gallery-isotope grid-3 masonry gutter-10 clearfix">
+
+              <!-- Portfolio Item Start -->
+              <div class="gallery-item breakfast">
+                <div class="thumb">
+                  <img class="img-fullwidth" src="images/portfolio/food1.jpg" alt="project">
+                  <div class="overlay-shade"></div>
+                  <div class="portfolio-upper-part">
+                    <h4 class="font-22 mb-0">Title Place Here</h4>
+                    <h5 class="font-14 text-gray-darkgray mt-0">- Photo</h5>
+                  </div>
+                  <div class="portfolio-bottom-part">
+                    <ul class="list-inline">
+                      <li><i class="fa fa-heart-o font-16 text-theme-colored vertical-align-middle"></i><span class="text-gray-darkgray font-14 ml-5">839</span></li>
+                      <li><i class="fa fa-comments-o font-16 text-theme-colored vertical-align-middle"></i><span class="text-gray-darkgray font-14 ml-5">360</span></li>
+                    </ul>
+                  </div>
+                  <div class="portfolio-view">
+                    <a class="image-popup-vertical-fit" title="Donate" href="images/portfolio/food1.jpg">
+                      <i class="fa fa-camera font-24 text-theme-colored"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+
+              <!-- Portfolio Item Start -->
+              <div class="gallery-item breakfast special">
+                <div class="thumb">
+                  <img class="img-fullwidth" src="images/portfolio/food2.jpg" alt="project">
+                  <div class="overlay-shade"></div>
+                  <div class="portfolio-upper-part">
+                    <h4 class="font-22 mb-0">Title Place Here</h4>
+                    <h5 class="font-14 text-gray-darkgray mt-0">- Photo</h5>
+                  </div>
+                  <div class="portfolio-bottom-part">
+                    <ul class="list-inline">
+                      <li><i class="fa fa-heart-o font-16 text-theme-colored vertical-align-middle"></i><span class="text-gray-darkgray font-14 ml-5">839</span></li>
+                      <li><i class="fa fa-comments-o font-16 text-theme-colored vertical-align-middle"></i><span class="text-gray-darkgray font-14 ml-5">360</span></li>
+                    </ul>
+                  </div>
+                  <div class="portfolio-view">
+                    <a class="image-popup-vertical-fit" title="Donate" href="images/portfolio/food2.jpg">
+                      <i class="fa fa-camera font-24 text-theme-colored"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+
+              <!-- Portfolio Item Start -->
+              <div class="gallery-item dinner">
+                <div class="thumb">
+                  <img class="img-fullwidth" src="images/portfolio/food3.jpg" alt="project">
+                  <div class="overlay-shade"></div>
+                  <div class="portfolio-upper-part">
+                    <h4 class="font-22 mb-0">Title Place Here</h4>
+                    <h5 class="font-14 text-gray-darkgray mt-0">- Photo</h5>
+                  </div>
+                  <div class="portfolio-bottom-part">
+                    <ul class="list-inline">
+                      <li><i class="fa fa-heart-o font-16 text-theme-colored vertical-align-middle"></i><span class="text-gray-darkgray font-14 ml-5">839</span></li>
+                      <li><i class="fa fa-comments-o font-16 text-theme-colored vertical-align-middle"></i><span class="text-gray-darkgray font-14 ml-5">360</span></li>
+                    </ul>
+                  </div>
+                  <div class="portfolio-view">
+                    <a class="image-popup-vertical-fit" title="Donate" href="images/portfolio/food3.jpg">
+                      <i class="fa fa-camera font-24 text-theme-colored"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+
+              <!-- Portfolio Item Start -->
+              <div class="gallery-item breakfast">
+                <div class="thumb">
+                  <img class="img-fullwidth" src="images/portfolio/food4.jpg" alt="project">
+                  <div class="overlay-shade"></div>
+                  <div class="portfolio-upper-part">
+                    <h4 class="font-22 mb-0">Title Place Here</h4>
+                    <h5 class="font-14 text-gray-darkgray mt-0">- Photo</h5>
+                  </div>
+                  <div class="portfolio-bottom-part">
+                    <ul class="list-inline">
+                      <li><i class="fa fa-heart-o font-16 text-theme-colored vertical-align-middle"></i><span class="text-gray-darkgray font-14 ml-5">839</span></li>
+                      <li><i class="fa fa-comments-o font-16 text-theme-colored vertical-align-middle"></i><span class="text-gray-darkgray font-14 ml-5">360</span></li>
+                    </ul>
+                  </div>
+                  <div class="portfolio-view">
+                    <a class="image-popup-vertical-fit" title="Donate" href="images/portfolio/food4.jpg">
+                      <i class="fa fa-camera font-24 text-theme-colored"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+
+              <!-- Portfolio Item Start -->
+              <div class="gallery-item lunch special">
+                <div class="thumb">
+                  <img class="img-fullwidth" src="images/portfolio/food5.jpg" alt="project">
+                  <div class="overlay-shade"></div>
+                  <div class="portfolio-upper-part">
+                    <h4 class="font-22 mb-0">Title Place Here</h4>
+                    <h5 class="font-14 text-gray-darkgray mt-0">- Photo</h5>
+                  </div>
+                  <div class="portfolio-bottom-part">
+                    <ul class="list-inline">
+                      <li><i class="fa fa-heart-o font-16 text-theme-colored vertical-align-middle"></i><span class="text-gray-darkgray font-14 ml-5">839</span></li>
+                      <li><i class="fa fa-comments-o font-16 text-theme-colored vertical-align-middle"></i><span class="text-gray-darkgray font-14 ml-5">360</span></li>
+                    </ul>
+                  </div>
+                  <div class="portfolio-view">
+                    <a class="image-popup-vertical-fit" title="Donate" href="images/portfolio/food5.jpg">
+                      <i class="fa fa-camera font-24 text-theme-colored"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+
+              <!-- Portfolio Item Start -->
+              <div class="gallery-item lunch">
+                <div class="thumb">
+                  <img class="img-fullwidth" src="images/portfolio/food6.jpg" alt="project">
+                  <div class="overlay-shade"></div>
+                  <div class="portfolio-upper-part">
+                    <h4 class="font-22 mb-0">Title Place Here</h4>
+                    <h5 class="font-14 text-gray-darkgray mt-0">- Photo</h5>
+                  </div>
+                  <div class="portfolio-bottom-part">
+                    <ul class="list-inline">
+                      <li><i class="fa fa-heart-o font-16 text-theme-colored vertical-align-middle"></i><span class="text-gray-darkgray font-14 ml-5">839</span></li>
+                      <li><i class="fa fa-comments-o font-16 text-theme-colored vertical-align-middle"></i><span class="text-gray-darkgray font-14 ml-5">360</span></li>
+                    </ul>
+                  </div>
+                  <div class="portfolio-view">
+                    <a class="image-popup-vertical-fit" title="Donate" href="images/portfolio/food6.jpg">
+                      <i class="fa fa-camera font-24 text-theme-colored"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+
+            </div>
+            <!-- End Portfolio Gallery Grid -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider: Video Tour -->
+    <section class="divider parallax layer-overlay overlay-dark-9" data-bg-img="images/bg/bg3.jpg" data-parallax-ratio="0.7">
+      <div class="display-table">
+        <div class="display-table-cell">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <a href="https://www.youtube.com/watch?v=LQoK8UKxftA" data-lightbox-gallery="youtube-video"><i class="fa fa-play-circle text-theme-colored font-72"></i></a>
+                <h2 class="text-white text-uppercase font-48 font-weight-700 mb-0">Let's have a <span class="text-theme-colored">video</span> Tour</h2>
+                <p class="font-16 text-white">We provides always our best industrial solution for our clientsand  always try to <br> achieve our client's trust and satisfaction. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: blog -->
+    <section id="blog">
+      <div class="container">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <h2 class="text-uppercase line-bottom-center mt-0">Our <span class="text-theme-colored font-weight-600">Blog</span></h2>
+              <div class="title-icon">
+                <i class="flaticon-charity-hand-holding-a-heart"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati! <br>ipsum dolor sit Rem autem voluptatem obcaecati</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <article class="post clearfix mb-sm-30 border-bottom-theme-color-2px bg-silver-light">
+                <div class="entry-header">
+                  <div class="post-thumb thumb">
+                    <img src="images/blog/1.jpg" alt="" class="img-responsive img-fullwidth">
+                  </div>
+                </div>
+                <div class="entry-content p-20 pr-10">
+                  <div class="entry-meta media mt-0 no-bg no-border">
+                    <div class="entry-date media-left text-center flip bg-theme-colored pt-5 pr-15 pb-5 pl-15">
+                      <ul>
+                        <li class="font-16 text-white font-weight-600 border-bottom">28</li>
+                        <li class="font-12 text-white text-uppercase">Feb</li>
+                      </ul>
+                    </div>
+                    <div class="media-body pl-15">
+                      <div class="event-content pull-left flip">
+                        <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#">Post title here</a></h4>
+                        <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-commenting-o mr-5 text-theme-colored"></i> 214 Comments</span>
+                        <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-heart-o mr-5 text-theme-colored"></i> 895 Likes</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor nobis deleniti, sint assumenda. Pariatur iste veritatis excepturi, ipsa optio nobis.</p>
+                  <a href="#" class="btn btn-default btn-sm btn-theme-colored mt-10">Read more</a>
+                  <div class="clearfix"></div>
+                </div>
+              </article>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <article class="post clearfix mb-sm-30 border-bottom-theme-color-2px bg-silver-light">
+                <div class="entry-header">
+                  <div class="post-thumb thumb">
+                    <img src="images/blog/2.jpg" alt="" class="img-responsive img-fullwidth">
+                  </div>
+                </div>
+                <div class="entry-content p-20 pr-10">
+                  <div class="entry-meta media mt-0 no-bg no-border">
+                    <div class="entry-date media-left text-center flip bg-theme-colored pt-5 pr-15 pb-5 pl-15">
+                      <ul>
+                        <li class="font-16 text-white font-weight-600 border-bottom">28</li>
+                        <li class="font-12 text-white text-uppercase">Feb</li>
+                      </ul>
+                    </div>
+                    <div class="media-body pl-15">
+                      <div class="event-content pull-left flip">
+                        <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#">Post title here</a></h4>
+                        <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-commenting-o mr-5 text-theme-colored"></i> 214 Comments</span>
+                        <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-heart-o mr-5 text-theme-colored"></i> 895 Likes</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor nobis deleniti, sint assumenda. Pariatur iste veritatis excepturi, ipsa optio nobis.</p>
+                  <a href="#" class="btn btn-default btn-sm btn-theme-colored mt-10">Read more</a>
+                  <div class="clearfix"></div>
+                </div>
+              </article>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <article class="post clearfix mb-sm-30 border-bottom-theme-color-2px bg-silver-light">
+                <div class="entry-header">
+                  <div class="post-thumb thumb">
+                    <img src="images/blog/3.jpg" alt="" class="img-responsive img-fullwidth">
+                  </div>
+                </div>
+                <div class="entry-content p-20 pr-10">
+                  <div class="entry-meta media mt-0 no-bg no-border">
+                    <div class="entry-date media-left text-center flip bg-theme-colored pt-5 pr-15 pb-5 pl-15">
+                      <ul>
+                        <li class="font-16 text-white font-weight-600 border-bottom">28</li>
+                        <li class="font-12 text-white text-uppercase">Feb</li>
+                      </ul>
+                    </div>
+                    <div class="media-body pl-15">
+                      <div class="event-content pull-left flip">
+                        <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#">Post title here</a></h4>
+                        <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-commenting-o mr-5 text-theme-colored"></i> 214 Comments</span>
+                        <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-heart-o mr-5 text-theme-colored"></i> 895 Likes</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Molestias eius illum libero dolor nobis deleniti, sint assumenda. Pariatur iste veritatis excepturi, ipsa optio nobis.</p>
+                  <a href="#" class="btn btn-default btn-sm btn-theme-colored mt-10">Read more</a>
+                  <div class="clearfix"></div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider: Clients -->
+    <section class="clients bg-theme-colored">
+      <div class="container pt-0 pb-0">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Section: Clients -->
+            <div class="owl-carousel-6col clients-logo transparent text-center">
+              <div class="item"> <a href="#"><img src="images/clients/w1.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w2.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w3.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w4.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w5.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w6.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w3.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w4.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w5.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w6.png" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- end main-content -->
+
+</x-main.layout>
