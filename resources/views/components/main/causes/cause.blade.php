@@ -1,4 +1,3 @@
-@aware(['cause'])
 <div class="causes bg-white border-1px border-bottom-theme-color-1px clearfix mb-30">
     <div class="col-md-5 col-lg-5 p-0">
         <div class="thumb">

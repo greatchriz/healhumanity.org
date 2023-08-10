@@ -1,7 +1,7 @@
 <x-main.layout>
 
-  <!-- Start main-content -->
-  <div class="main-content">
+ <!-- Start main-content -->
+ <div class="main-content">
     <!-- Section: home -->
     <section id="home">
       <div class="container-fluid p-0">
@@ -565,8 +565,6 @@
         </div>
       </div>
     </section>
-
-    <x-main.causes.section :causes="$causes" />
 
     <!-- Section: Causes -->
     <section id="causes" class="bg-silver-light">
@@ -1442,5 +1440,4 @@
     </section>
   </div>
   <!-- end main-content -->
-
 </x-main.layout>
